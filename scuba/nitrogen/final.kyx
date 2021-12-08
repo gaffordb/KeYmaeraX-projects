@@ -53,7 +53,7 @@ Problem.
     /* Case 1: Descend. */
     {
       ?stoppedTimer = 0;
-      ?tApprox > tau*HRmax*-(d + vDesc*C)/vAsc + tau*HRmax*C + tau*HRmax*(stopTime - stoppedTimer);
+      ?tApprox > tau*HRmax*-(d + vDesc*C)/vAsc + tau*HRmax*C - tau*HRmax*(stopTime - stoppedTimer);
       a := *;
       ?(HRmin <= a & a <= HRmax);
       v := vDesc;
